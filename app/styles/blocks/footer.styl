@@ -1,0 +1,63 @@
+footer
+  cf()
+
+  background url(/img/bg_footer.svg) #f5f5f5 //#DDD
+  padding 0 0 40px
+
+  h4
+    font-size 18px
+
+
+  nav, address, form
+    float left
+
+  address
+    width 400px
+  nav
+    width 200px
+
+    a
+      display block
+      text-decoration none
+      color #333
+      font-size 16px
+      line-height 30px
+
+
+  .icon
+    width 300px
+    a
+      line-height 36px
+
+      &:before
+        padding-bottom .5em
+        content ''
+        display inline-block
+        width 36px
+        height 36px
+
+        vertical-align bottom  //middle
+        //margin 0 1em .5em 0
+        margin-right 1em
+
+      &:nth-of-type(1):before
+        background url(/img/f-i_1.png) no-repeat
+      &:nth-of-type(2):before
+        background url(/img/f-i_2.png) no-repeat
+      &:nth-of-type(3):before
+        background url(/img/f-i_3.png) no-repeat
+      &:nth-of-type(4):before
+        background url(/img/f-i_4.png) no-repeat
+
+
+
+  form
+    [placeholder]
+      font-style italic
+    width 360px
+    input, textarea
+      //display inline-block
+      width 100%
+      margin-bottom 1em
+    textarea
+      height 80px

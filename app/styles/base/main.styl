@@ -1,0 +1,197 @@
+
+/*
+
+http://fonts4web.ru/segoeui.html
+Код для подключения шрифта в /css/stylename.css
+
+font-family: "SegoeUIRegular";
+*/
+
+
+
+// /* font-family: "SegoeUIItalic"; */
+// @font-face {
+//     font-family: "SegoeUIItalic";
+//     src: url("/fonts/SegoeUIItalic/SegoeUIItalic.eot");
+//     src: url("/fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+//     url("/fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+//     url("/fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: normal;
+// }
+//
+/* font-family: "SegoeUISemiBold"; */
+// @font-face {
+//     font-family: "SegoeUISemiBold";
+//     src: url("/fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+//     src: url("/fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+//     url("/fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+//     url("/fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: normal;
+// }
+/* font-family: "SegoeUIBold"; */
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("/fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("/fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("/fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("/fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "SegoeUILight"; */
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("/fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("/fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("/fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+*
+  //margin 0
+  //padding 0
+  box-sizing border-box
+
+html,body
+  width 100%
+  height 100%
+
+body
+    //костыль
+    width 100%
+    overflow-x hidden
+
+
+    margin 0
+    font 14px/1.4 'SegoeUIRegular' sans-serif //'SegoeUILight'//'Segoe UI'
+    color #333
+
+h1
+  font-family 'SegoeUILight'
+
+b
+  font-family: 'SegoeUIBold'
+
+
+.wrap
+  width 1260px
+  margin 0 auto
+
+
+//
+address
+  font-style normal
+
+section
+  .subnav
+    position absolute
+    right 0
+    top 40px
+    color  #999
+    width 100%//330px
+    a
+      color  #999
+
+  h2
+    text-align center
+    font-size 36px
+    //color #333
+
+
+[placeholder]
+  font-size 16px
+  font-family: arial
+  //padding 0 1em
+
+textarea
+  //padding: 1em
+
+input,textarea
+  border 1px solid #c4c4c4
+  padding: 1em
+  //padding-bottom: 1em
+
+input
+  height 36px
+  line-height 36px
+
+input,button,textarea
+  &:focus
+    box-shadow none
+    outline none
+  border-radius 5px
+
+
+//button, input[type="submit"]
+button, .btn, input[type="submit"]
+  cursor pointer
+  padding 0 2em
+  color #FFF
+  border 0
+  border-radius 3px
+  font-size 16px
+
+  line-height 36px
+  height 37px
+
+  background linear-gradient(90deg, #6d99ff 0%, #3c6cde 100%)
+  &:hover
+    background  #6491f9
+  &:active
+    background  #4b7cef
+
+
+.btn
+  display inline-block
+  text-decoration none
+
+//.btn-blue
+.btn-green
+  background #7cb342
+  &:hover
+    background  #95c561
+  &:active
+    background  #71a23c
+
+
+
+
+/*
+
+rgb(51, 51, 51)
+rgb(51, 51, 51)
+rgb(124, 179, 66)
+
+background linear-gradient(90deg, #6d99ff 0%, #3c6cde 100%)
+
+background linear-gradient(0deg, #e0e0e0 0%, #ffffff 100%)
+
+background linear-gradient(0deg, #dce3e8 0%, #f4f8fb 100%)
+
+background linear-gradient(0deg, #ffffff 0%, #e0e0e0 100%)
+
+background linear-gradient(135deg, #ff3b30 0%, #ff634d 100%)
+
+background linear-gradient(135deg, #0db14b 0%, #3ede7a 100%)
+
+background linear-gradient(135deg, #287bec 0%, #71a6ff 100%)
+
+background linear-gradient(135deg, #ffae00 0%, #fcca50 100%)*/
