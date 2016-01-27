@@ -50,7 +50,7 @@ gulp.task('stylusTask', function() {
 			compress: true
 		}))
 		.on("error", onError)
-		.pipe(gulp.dest('./build/css/'));
+		.pipe(gulp.dest('./css/'));
 });
 
 
@@ -65,9 +65,9 @@ gulp.task('stylusTask', function() {
 
 // BrowserSync
 gulp.task('browserSyncTask', function() {
-	browserSync.init(['./build/*.html', './build/css/*.css'], {
+	browserSync.init(['./*.html', './css/*.css'], {
 		server: {
-			baseDir: "./build/"
+			baseDir: "./"
 		}
 	});
 });
