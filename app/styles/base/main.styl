@@ -76,11 +76,11 @@ html,body
 
 body
 
-
-
-    margin 0
-    font 14px/1.4 'SegoeUIRegular' sans-serif //'SegoeUILight'//'Segoe UI'
-    color #333
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  margin 0
+  font 14px/1.4 'SegoeUIRegular' sans-serif //'SegoeUILight'//'Segoe UI'
+  color #333
 
 h1
   font-family 'SegoeUILight'
@@ -163,35 +163,16 @@ button, .btn, input[type="submit"]
   display inline-block
   text-decoration none
 
-//.btn-blue
-.btn-green
+btn-green()
   background #7cb342
   &:hover
     background  #95c561
   &:active
     background  #71a23c
 
-
-
-
-/*
-
-rgb(51, 51, 51)
-rgb(51, 51, 51)
-rgb(124, 179, 66)
-
-background linear-gradient(90deg, #6d99ff 0%, #3c6cde 100%)
-
-background linear-gradient(0deg, #e0e0e0 0%, #ffffff 100%)
-
-background linear-gradient(0deg, #dce3e8 0%, #f4f8fb 100%)
-
-background linear-gradient(0deg, #ffffff 0%, #e0e0e0 100%)
-
-background linear-gradient(135deg, #ff3b30 0%, #ff634d 100%)
-
-background linear-gradient(135deg, #0db14b 0%, #3ede7a 100%)
-
-background linear-gradient(135deg, #287bec 0%, #71a6ff 100%)
-
-background linear-gradient(135deg, #ffae00 0%, #fcca50 100%)*/
+.btn-green
+  background #7cb342
+  &:hover
+    background  #95c561
+  &:active
+    background  #71a23c
