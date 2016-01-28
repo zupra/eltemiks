@@ -1,6 +1,11 @@
 #section_7
+  //костыль
+  width 1040px
+  margin 0 auto
 
   .review
+
+
     padding 1em 0
 
     img
@@ -10,20 +15,28 @@
       margin-right 60px
   .review_txt
     float right
-    width 1000px//50%
+    width 800px //1000px
     border 2px solid #c2c2c2
     position relative
     padding 80px 1em 1em
 
     position relative
+    &:before,
+    &:after
+      content ''
+      position absolute
+    &:before
+      width 21px
+      height 21px
+      left -20px
+      bottom 21px
+      background url(../img/corner-review_txt.png) center no-repeat
     &:after
       position absolute
       z-index -1
-      bottom -36px
+      bottom -34px
       left 50%
       transform translateX(-50%)
-
-      content ''
 
       width 842px
       height 56px
