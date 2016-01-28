@@ -1,26 +1,33 @@
 #section_7
 
-  // .SLICK_s7
-  //   padding 1em 0
-
-
-  cf()
-  //width 100%
   .review
+    padding 1em 0
+
     img
       width 163px
       height 214px
       float left
       margin-right 60px
   .review_txt
-    //overflow auto
-    //display inline-block
-
     float right
     width 1000px//50%
     border 2px solid #c2c2c2
     position relative
     padding 80px 1em 1em
+
+    position relative
+    &:after
+      position absolute
+      z-index -1
+      bottom -36px
+      left 50%
+      transform translateX(-50%)
+
+      content ''
+
+      width 842px
+      height 56px
+      background url(../img/bg-review.png)
 
 
   .review_num,.review_from
