@@ -49,6 +49,7 @@
           /* выбор города */
           $('#output_city').click(function() {
             $("#cities_list").slideToggle();
+            $(this).toggleClass('active');
           });
           $('#cities_list li').click(function() {
             var city = $(this).html(),

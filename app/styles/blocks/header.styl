@@ -27,13 +27,28 @@
   cursor pointer
   i
     font-style normal
+    padding-right 1em
+    &:before
+      content ''
+      margin-right 4px
+      display inline-block
+      width 14px
+      height 35px
+      vertical-align bottom
 
-  #output_tel
+
+  #output_city
     &:before
-      content '▧'
-  #output_time
-    &:before
-      content '▧'
+      background url(../img/i-output_city.png) center no-repeat
+    &:after
+      content ' ▴'
+    &.active:after
+      content ' ▾'
+
+  #output_tel:before
+    background url(../img/i-output_tel.png) center no-repeat
+  #output_time:before
+    background url(../img/i-output_time.png) center no-repeat
 
 #cities_list
   z-index 1
