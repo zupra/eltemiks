@@ -15,14 +15,51 @@
     display inline-block
     vertical-align middle
 
-#contact
-  float right
-  position relative
-#contact_sity
 
-  position relative
+
+#cities,#cities_list,#output
+  position absolute
+#cities
+  top 0
+  right 0
+  width 600px
+#output
+  cursor pointer
+  i
+    font-style normal
+
+  #output_tel
+    &:before
+      content '▧'
+  #output_time
+    &:before
+      content '▧'
+
+#cities_list
+  z-index 1
+  box-shadow 0px 1px 6px 0px rgba(0, 0, 0, 0.4)
   list-style none
-  //.active
+  margin 0
+  padding .5em 1.5em
+  position absolute
+  top 35px
+  left -1em
+  background #FFF
+  li
+    cursor pointer
+    color #000
+    &:hover
+      text-decoration underline
+
+
+
+
+
+
+
+
+
+
 
 
 #cart_order
@@ -42,20 +79,10 @@
   text-align left
   line-height 1.4
   border-radius 0
-  
+
   li b
     float right
     //text-align right
-
-
-
-
-
-
-
-
-
-
 
 
 
