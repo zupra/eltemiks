@@ -227,14 +227,14 @@
     <h2><a href="#" class="active">Акции</a> и <a href="#" class="">спецпредложения</a></h2>
 
     <div class="SLICK_s4">
-      <div><img src="http://placehold.it/622x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/622x275" alt=""></div>
-      <div><img src="http://placehold.it/622x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/622x275" alt=""></div>
-      <div><img src="http://placehold.it/622x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/622x275" alt=""></div>
-      <div><img src="http://placehold.it/622x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/622x275" alt=""></div>
+      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/600x275" alt=""></div>
+      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/600x275" alt=""></div>
+      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/600x275" alt=""></div>
+      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/600x275" alt=""></div>
     </div>
 
     <div class="center">
@@ -557,7 +557,7 @@
   <section id="section_10">
     <div class="wrap">
       <img src="img/logo_w.png" alt="">
-      
+
       <div class="txt">
 
         <p>Компания Элтемикс занимается поставкой лабораторного
@@ -641,16 +641,26 @@
   <script>
     $(function() {
       $('.SLICK_s4').slick({
-        infinite: true,
         slidesToShow: 3,
-        //slidesToScroll: 3,
-        //autoplay: true,
-        //autoplaySpeed: 2000,
-        //centerMode: true,
-
-
+        arrows: false,
         dots: true,
-        centerMode: true
+        responsive: [
+          {
+            breakpoint: 1800,
+            settings: {
+              slidesToShow: 2,
+              centerMode: true
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 1,
+              centerMode: true
+            }
+          }
+        ]
+
       });
       $('.SLICK_s6').slick({
         slidesToShow: 1,
