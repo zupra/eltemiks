@@ -15,6 +15,65 @@
 
   <div id="bigNav">
     <div class="wrap">
+<!--
+      <nav>
+        <h2>Наши проекты</h2>
+
+        Производственное и лаб. оборудование для с/х
+        Каталог весового оборудования
+        Контрольно-измерительные приборы
+        Медицинское оборудование
+        Лабораторная и медицинская мебель
+        Производственное и лаб. оборудование для производства молока
+        Каталог общелабораторного оборудования
+      </nav>
+
+
+      Каталог
+
+      Лабораторная посуда
+      Химреактивы
+      Органические реактивы
+      Растворители
+      Кислоты
+      Соли и соединения   Неорганические реактивы
+      Гидроокиси
+      Металлы
+      Кислоты
+      Оксиды
+      Соли
+      Элементы
+      Растворы   Материалы для строительства   чистых зон
+      Материалы
+      Оборудование
+      Лабораторная мебель
+
+
+      О компании
+
+      Сертификаты
+      Лицензии
+      ПатентыОтзывыВакансии
+
+
+      Новости
+      Новости компании «Элтемикс»
+      Новости наших партнеров
+
+      Полезная информация
+
+  Глоссарий
+  Статьи
+
+Сервис
+Доставка
+Контакты
+Сотрудничество:
+
+
+ -->
+
+
       <ul>
         <li>item1</li>
         <li>item2</li>
@@ -257,15 +316,14 @@
   <section id="section_4">
     <h2><a href="#" class="active">Акции</a> и <a href="#" class="">спецпредложения</a></h2>
 
-    <div class="SLICK_s4">
-      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/600x275" alt=""></div>
-      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/600x275" alt=""></div>
-      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/600x275" alt=""></div>
-      <div><img src="http://placehold.it/600x275/E8117F/ffffff" alt=""></div>
-      <div><img src="http://placehold.it/600x275" alt=""></div>
+    <div class="SLICK_s4 wrap">
+      <div><img src="http://placehold.it/1260x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/1260x275" alt=""></div>
+      <div><img src="http://placehold.it/1260x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/1260x275" alt=""></div>
+      <div><img src="http://placehold.it/1260x275/E8117F/ffffff" alt=""></div>
+      <div><img src="http://placehold.it/1260x275" alt=""></div>
+
     </div>
 
     <div class="center">
@@ -378,10 +436,16 @@
     <div class="wrap">
 
       <div class="SLICK_s6">
-        <div><img src="http://placehold.it/520x200" alt=""></div>
-        <div><img src="http://placehold.it/520x200" alt=""></div>
-        <div><img src="http://placehold.it/520x200" alt=""></div>
-        <div><img src="http://placehold.it/520x200" alt=""></div>
+        <div class="slick-partners">
+          <b><i>prtnr_1</i></b>
+          <b><i>prtnr_2</i></b>
+          <b><i>prtnr_3</i></b>
+          <b><i>prtnr_4</i></b>
+          <b><i>prtnr_5</i></b>
+          <b><i>prtnr_6</i></b>
+          <b><i>prtnr_7</i></b>
+          <b><i>prtnr_8</i></b>
+        </div>
       </div>
 
 
@@ -672,7 +736,7 @@
   <script>
     $(function() {
       $('.SLICK_s4').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         arrows: false,
         dots: true,
 
@@ -696,13 +760,13 @@
         // ]
 
       });
-      $('.SLICK_s6').slick({
-        slidesToShow: 1,
-        autoplay: true,
-        centerMode: true,
-        //centerPadding: '10px',
-        slidesToScroll: 1
-      });
+      // $('.SLICK_s6').slick({
+      //   slidesToShow: 1,
+      //   //autoplay: true,
+      //   centerMode: true,
+      //   //centerPadding: '10px',
+      //   slidesToScroll: 1
+      // });
       $('.SLICK_s7').slick({
         //autoplay: true,
       });
@@ -729,7 +793,8 @@
 
         $('#bigNav').slideToggle();
 
-        $('body').off('click').on('click', function() {
+        $('body').off('click')
+        $('#bigNav').on('click', function() {
             $('#bigNav').slideToggle();
         });
 
