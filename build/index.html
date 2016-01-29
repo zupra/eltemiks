@@ -270,7 +270,7 @@
         </figure>
 
         <span>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit incidunt ad tempore ipsum aperiam provident magnam 
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit incidunt ad tempore ipsum aperiam provident magnam
         </span>
 
       </div>
@@ -584,6 +584,47 @@
 
     </div>
 
+
+
+    <!-- TEST   -->
+    <div class="catalogsPDF catalogsPDF_more">
+      <div>
+        <img src="http://lorempixel.com/144/201?12" alt="">
+        <p>Название товара</p>
+        <a href="#" class="btn">Скачать</a>
+        <p>(.PDF, 5 мБ)</p>
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/144/201?12" alt="">
+        <p>Название товара</p>
+        <a href="#" class="btn">Скачать</a>
+        <p>(.PDF, 5 мБ)</p>
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/144/201?12" alt="">
+        <p>Название товара</p>
+        <a href="#" class="btn">Скачать</a>
+        <p>(.PDF, 5 мБ)</p>
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/144/201?12" alt="">
+        <p>Название товара</p>
+        <a href="#" class="btn">Скачать</a>
+        <p>(.PDF, 5 мБ)</p>
+      </div>
+
+      <div>
+        <img src="http://lorempixel.com/144/201?12" alt="">
+        <p>Название товара</p>
+        <a href="#" class="btn">Скачать</a>
+        <p>(.PDF, 5 мБ)</p>
+      </div>
+
+    </div>
+
     <a class="more" href="">Загрузить еще 5 каталогов</a>
   </section>
 
@@ -752,6 +793,7 @@
         slidesToShow: 1,
         arrows: false,
         dots: true,
+        fade: true
 
         // responsive: [
         //   {
@@ -813,6 +855,12 @@
 
         return false;
 
+      });
+
+
+      $('.more').click(function(e) {
+        $('.catalogsPDF_more').slideToggle();
+        return false;
       });
 
 
