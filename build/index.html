@@ -1051,6 +1051,7 @@
             current_tab = tab.get(index);
 
         console.log(current_tab);
+        $(this).addClass('tab_current').siblings().removeClass('tab_current');
         $(current_tab).show().siblings('.js-tab').hide();
 
         return false;
