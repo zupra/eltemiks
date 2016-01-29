@@ -91,6 +91,15 @@ b, h3
   font-family: 'SegoeUIBold'
 
 
+
+
+
+.tab
+  display none
+
+
+
+
 .wrap
   //width 1260px
   width 1300px
@@ -115,6 +124,12 @@ section
     //width 100%//330px
     a
       color  #999
+      text-decoration none
+      &:hover
+        border-bottom 1px dashed
+      &.tab_current
+        text-decoration underline
+        border-bottom 0
 
   h2
     text-align center
