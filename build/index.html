@@ -841,6 +841,7 @@
       </article>
     </div>
 
+
     <aside>
       <form action="">
         <h3>Подписаться на новости</h3>
@@ -1020,27 +1021,22 @@
         return false;
       });
 
-      // $('.more').click(function(e) {
-      //   $('.catalogsPDF_more').fadeToggle();//slideToggle();
-      //   return false;
-      // });
 
 
-      $('section .js-tab').hide().eq(1).show();
-      // $('section').each(function(index) {
-      //   $('.js-tab:eq(1)').show();
-      // });
-      //$('section .js-tab:eq(1)').show();
+
+      //$('section .js-tab').hide().eq(1).show();
+      //$('section .js-tab').eq(0).show();
+      $('section').each(function() {
+          // var size = $('.js-tab').size(); //.eq(0).show();
+          // console.log(size);
+          $(this).find('.js-tab').eq(0).show();
+      });
 
 
-      (function(){
-        // var subnav,
-        // tab_current
-        // ;
 
-        //$('section .tab:eq(1)').show();
 
-      }());
+      // (function(){
+      // }());
 
 
       $('.subnav a').click(function(e) {
