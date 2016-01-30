@@ -1,7 +1,7 @@
 /**
 
 //del gulp-jade jeet gulp-postcss gulp-rigger gulp-uglify --save-dev
-npm i gulp gulp-stylus autoprefixer-stylus gulp-postcss --save-dev
+npm i gulp gulp-stylus gulp-sourcemaps autoprefixer-stylus gulp-postcss --save-dev
 
 список
 npm list --depth=0 -g
@@ -20,6 +20,8 @@ var gulp = require('gulp'),
 
 
 	stylus = require('gulp-stylus'),
+	//originalStylus = require('gulp-stylus').stylus,
+	sourcemaps = require('gulp-sourcemaps'),
 	jeet = require('jeet'),
 
 	//rigger = require('gulp-rigger'),
@@ -41,6 +43,7 @@ function onError(err) {
 gulp.task('stylusTask', function() {
 
 	gulp.src('./app/styles/common.styl')
+		.pipe(sourcemaps.init())
 		.pipe(stylus({
 
 			use: [
@@ -50,9 +53,19 @@ gulp.task('stylusTask', function() {
 			compress: true
 		}))
 		.on("error", onError)
-		.pipe(gulp.dest('./build/css/'));
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('./build/css'));
 });
 
+// External sourcemaps
+// gulp.task('sourcemaps-external', function () {
+//   return gulp.src('./app/styles/sourcemaps-external.styl')
+//     .pipe(sourcemaps.init())
+//     .pipe(stylus())
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('./build/css'));
+// });
+//
 
 
 // HTML

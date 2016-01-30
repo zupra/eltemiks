@@ -1,36 +1,9 @@
 
 /*
-
 http://fonts4web.ru/segoeui.html
 Код для подключения шрифта в /css/stylename.css
-
-font-family: "SegoeUIRegular";
 */
 
-
-
-// /* font-family: "SegoeUIItalic"; */
-// @font-face {
-//     font-family: "SegoeUIItalic";
-//     src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-//     src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-//     url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-//     url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-// }
-//
-/* font-family: "SegoeUISemiBold"; */
-// @font-face {
-//     font-family: "SegoeUISemiBold";
-//     src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
-//     src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
-//     url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
-//     url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-// }
-/* font-family: "SegoeUIBold"; */
 @font-face {
     font-family: "SegoeUIBold";
     src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
@@ -51,7 +24,6 @@ font-family: "SegoeUIRegular";
     font-weight: normal;
 }
 
-/* font-family: "SegoeUILight"; */
 @font-face {
     font-family: "SegoeUILight";
     src: url("../fonts/SegoeUILight/SegoeUILight.eot");
@@ -63,33 +35,38 @@ font-family: "SegoeUIRegular";
 }
 
 
-
-
-*//, *:before, *:after
-  //margin 0
-  //padding 0
+*
   box-sizing border-box
+
 
 html,body
   width 100%
   height 100%
 
+
+
+
+
+//'SegoeUILight'//'Segoe UI'
 body
 
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   margin 0
-  font 14px/1.4 'SegoeUIRegular' sans-serif //'SegoeUILight'//'Segoe UI'
-  color #333
 
+  font 14px/1.4 "SegoeUIRegular"
+  //font 14px/1.4 SegoeUIRegular sans-serif
+  //font-family SegoeUIRegular, sans-serif
+
+
+  color #333
   min-width 1300px
 
 h1
-  font-family 'SegoeUILight'
+  font-family "SegoeUILight"
 
 b, h3
-  font-family: 'SegoeUIBold'
-
+  font-family: "SegoeUIBold"
 
 
 //
@@ -98,7 +75,7 @@ b, h3
   display none
 
 
-// 
+//
 // section .js-tab:nth-child(0)
 //   display block
 //
@@ -110,24 +87,23 @@ b, h3
   //width 1260px
   width 1300px
   padding 0 30px
-  //padding 0 1em
   margin 0 auto
 
 .center
   padding-top 30px
   clear both
   text-align center
-//
-address
-  font-style normal
+
+
+
+
 
 section
   .subnav
     position absolute
     right 0
     top 50px
-    color  #999
-    //width 100%//330px
+    color  #999 //для разделителя
     a
       color  #999
       text-decoration none
@@ -143,22 +119,26 @@ section
     //color #333
 
 
+
+
+
 [placeholder]
   font-size 16px
   font-family: arial
   //padding 0 1em
 
 textarea
-  //padding: 1em
+  padding: 1em
 
 input,textarea
   border 1px solid #c4c4c4
-  padding: 1em
+  
   //padding-bottom: 1em
 
 input
   height 36px
   line-height 36px
+  padding: 0 1em
 
   margin-bottom 1em
 
