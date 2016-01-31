@@ -138,7 +138,7 @@
       </ul>
 
 
-      <nav class="tabs">
+      <nav class="Htabs">
         <a href="#" class="active">Каталог</a>
         <a href="#">Доставка</a>
         <a href="#">Сервис</a>
@@ -203,7 +203,7 @@
 
 
   <!-- Области применения -->
-  <section id="section_2">
+  <section id="MS_2">
     <div class="wrap">
 
       <div class="figureS">
@@ -256,7 +256,7 @@
 
 
   <!-- Компания «Элтемикс» -->
-  <section id="section_3" class="wrap">
+  <section id="MS_3" class="wrap">
     <h2>Компания «Элтемикс»</h2>
     <p>
       <b>
@@ -273,12 +273,16 @@
         товаров в нашем каталоге продукции
       </b> Уже 13 лет мы поставляем лабораторное оборудование и химические реактивы по всей России. Более 20 000 успешно выполненных заказов, начиная с 2001 года.
     </p>
-    <a href="#" class="btn">Мне нужна консультация специалиста</a>
+
+    <div class="center">
+      <a href="#" class="btn">Мне нужна консультация специалиста</a>
+    </div>
+
   </section>
 
 
   <!-- Акции -->
-  <section id="section_4">
+  <section id="MS_4">
     <h2><a href="#" class="active">Акции</a> и <a href="#" class="">спецпредложения</a></h2>
 
     <div class="SLICK_s4 wrap">
@@ -301,7 +305,7 @@
 
 
   <!-- Предложение месяца -->
-  <section id="section_5" class="wrap">
+  <section id="MS_5" class="wrap">
     <h2>Предложение месяца</h2>
 
     <div class="subnav">
@@ -559,7 +563,7 @@
 
 
   <!-- Партнеры -->
-  <section id="section_6">
+  <section id="MS_6">
     <div class="wrap">
       <div class="SLICK_s6">
         <div class="slick-partners">
@@ -600,7 +604,7 @@
 
 
   <!-- Отзывы -->
-  <section id="section_7">
+  <section id="MS_7">
     <h2>Отзывы клиентов</h2>
 
     <!-- Отзывы -->
@@ -641,7 +645,7 @@
 
 
   <!-- Каталоги -->
-  <section id="section_8" class="wrap">
+  <section id="MS_8" class="wrap">
     <h2>Каталоги продукции</h2>
 
     <div class="subnav">
@@ -770,7 +774,7 @@
 
 
   <!-- Новости -->
-  <section id="section_9" class="wrap">
+  <section id="MS_9" class="wrap">
     <h2>Новости</h2>
 
     <div class="subnav">
@@ -894,7 +898,7 @@
 
 
 
-  <section id="section_10">
+  <section id="MS_10">
     <div class="wrap">
       <img src="img/logo_w.png" alt="">
       <div class="txt">
@@ -1020,11 +1024,15 @@
       $('#cities_list li').click(function() {
         var city = $(this).html(),
           tel = $(this).data('tel'),
-          time = $(this).data('time');
+          time = $(this).data('time'),
+          addres = $(this).data('addres');
         $("#cities_list").slideUp();
         $("#output_city").html(city);
         $("#output_tel").html(tel);
         $("#output_time").html(time);
+        if( addres ) {
+          $("#output_addres").html(addres);
+        }
       });
 
 

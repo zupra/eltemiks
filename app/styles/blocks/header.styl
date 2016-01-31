@@ -18,55 +18,10 @@
 
 
 
-#cities,#cities_list,#output
-  position absolute
-#cities
-  top 0
-  right 0
-  width 600px
-#output
-  cursor pointer
-  i
-    font-style normal
-    padding-right 1em
-    &:before
-      content ''
-      margin-right 4px
-      display inline-block
-      width 14px
-      height 35px
-      vertical-align bottom
 
 
-  #output_city
-    &:before
-      background url(../img/i-output_city.png) center no-repeat
-    &:after
-      content ' ▴'
-    &.active:after
-      content ' ▾'
 
-  #output_tel:before
-    background url(../img/i-output_tel.png) center no-repeat
-  #output_time:before
-    background url(../img/i-output_time.png) center no-repeat
 
-#cities_list
-  display none
-  z-index 1
-  box-shadow 0px 1px 6px 0px rgba(0, 0, 0, 0.4)
-  list-style none
-  margin 0
-  padding .5em 1.5em
-  position absolute
-  top 35px
-  left -1em
-  background #FFF
-  li
-    cursor pointer
-    color #000
-    &:hover
-      text-decoration underline
 
 
 
@@ -85,9 +40,11 @@ header
     font-size 14px
     line-height 20px
 
+
   ul
     list-style none
     padding 110px 0 70px
+    //cf()
     li
       float left
       width 25%
@@ -114,7 +71,7 @@ header
 
 
 
-  .tabs a
+  .Htabs a
       color #FFF
       text-decoration none
       font-size 16px
@@ -130,6 +87,9 @@ header
         text-decoration none
         background #008fff
         border-radius 5px 5px 0 0
+
+
+
 
   .Hform
     background #008fff
@@ -154,7 +114,6 @@ header
 
     img
       float left
-
 
     input[type='search']
       width 710px
