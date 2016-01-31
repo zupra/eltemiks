@@ -1,0 +1,123 @@
+$(function() {
+  $('.SLICK_s4').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    fade: true
+  });
+  $('.SLICK_s6').slick({
+    autoplay: true
+  });
+  $('.SLICK_s7').slick({
+    fade: true
+  });
+
+
+
+  /* выбор города */
+  $('#output_city').click(function() {
+    $("#cities_list").slideToggle();
+    $(this).toggleClass('active');
+  });
+  $('#cities_list li').click(function() {
+    var city = $(this).html(),
+      tel = $(this).data('tel'),
+      time = $(this).data('time'),
+      addres = $(this).data('addres');
+    $("#cities_list").slideUp();
+    $("#output_city").html(city);
+    $("#output_tel").html(tel);
+    $("#output_time").html(time);
+    if( addres ) {
+      $("#output_addres").html(addres);
+    }
+  });
+
+
+
+
+
+
+  (function(){
+    var cities = {
+      'Горoд_1' : ['Горoд_1', 'tel_1', 'time_1', 'addres_1'],
+      'Горoд_2' : ['Горoд_2', 'tel_2', 'time_2', 'addres_2'],
+      'Горoд_3' : ['Горoд_3', 'tel_3', 'time_3', 'addres_3']
+    }
+
+    for(var item in cities) {
+      var itemCity = cities[item][0],
+          itemTel = cities[item][1],
+          itemTime = cities[item][2],
+          itemAddres = cities[item][3],
+          $template = $($('#citiesTemplate').html());
+
+      $template.find('.output_1').text(itemTel);
+      $template.find('.output_2').text(itemTime);
+      $template.find('.output_3').text(itemAddres);
+
+      $shop.append($template);
+    }
+
+  });
+
+
+
+
+
+
+
+
+
+  // $('.js-bigNav').on('click', function(e) {
+  //   $('#bigNav').slideToggle();
+  //   return false;
+  // });
+
+  $('.js-bigNav').on('click', showBigNav);
+
+  function showBigNav() {
+    $('#bigNav').slideToggle();
+    $('body').toggleClass('jsNoScroll');
+    return false;
+  }
+
+
+
+
+  $('.more').click(function(e) {
+    $('.catalogsPDF_more').fadeToggle(); //slideToggle();
+    return false;
+  });
+
+
+
+
+
+
+
+
+
+  //$('section .js-tab').hide().eq(1).show();
+  //$('section .js-tab').eq(0).show();
+  $('section').each(function() {
+    // var size = $('.js-tab').size(); //.eq(0).show();
+    // console.log(size);
+    $(this).find('.js-tab').eq(0).show();
+  });
+
+  $('.subnav a').click(function(e) {
+
+
+    var index = $(this).index(),
+      tab = $(this).parent('.subnav').nextAll('.js-tab'),
+      current_tab = tab.get(index);
+
+    console.log(current_tab);
+    $(this).addClass('tab_current').siblings().removeClass('tab_current');
+    $(current_tab).show().siblings('.js-tab').hide();
+
+    return false;
+  });
+
+});
