@@ -42,17 +42,7 @@
         <a href="">Неорганические реактивы</a>
         <a href="">Гидроокиси</a>
       </nav>
-      <!--
-      Металлы
-      Кислоты
-      Оксиды
-      Соли
-      Элементы
-      Растворы   Материалы для строительства   чистых зон
-      Материалы
-      Оборудование
-      Лабораторная мебель
- -->
+
 
       <nav>
         <h2>О компании</h2>
@@ -73,13 +63,19 @@
 
 
       <nav>
+
+
+        <div class="cart">
+          Заказ на <b>48 830 р.</b>
+          <i class="cart_sum-prod">13</i>
+        </div>
+
+
         <h2>Сервис</h2>
         <h2>Доставка</h2>
         <h2>Контакты</h2>
         <h2>Сотрудничество:</h2>
       </nav>
-
-
 
     </div>
   </div>
@@ -156,7 +152,7 @@
         <div>
           <div>
 
-            <div id="cart">
+            <div class="cart">
               Заказ на <b>48 830 р.</b>
               <i class="cart_sum-prod">13</i>
               <div id="cart_order">
@@ -1018,19 +1014,20 @@
         $("#output_time").html(time);
       });
 
-      $('.js-bigNav').on('click', function(e) {
-        //e.preventDefault();
 
+      // $('.js-bigNav').on('click', function(e) {
+      //   $('#bigNav').slideToggle();
+      //   return false;
+      // });
+
+      $('.js-bigNav').on('click', showBigNav);
+      function showBigNav() {
         $('#bigNav').slideToggle();
-
-        // $('body').off('click')
-        // $('#bigNav').on('click', function() {
-        //     $('#bigNav').slideToggle();
-        // });
-
+        $('body').toggleClass('jsNoScroll');
         return false;
+      }
 
-      });
+
 
 
       $('.more').click(function(e) {
