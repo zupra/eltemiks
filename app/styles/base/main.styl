@@ -260,22 +260,41 @@ btn-green()
 
 
 .countries
+
   a
     display inline-block
-    height 16px
-    width 20px
-    background url(../img/i-flag-en.png) no-repeat
+
+    width: 32px
+    height: 26px
+
+    //height 16px
+    //width 20px
+
+    // .active
+    //   background rgba(0, 158, 224, 0.77)
+    //   width: 32px
+    //   height: 26px
+    //
+    //
+
+    &.ru
+      background url(../img/i-flag-ru.png) center no-repeat rgba(0, 158, 224, 0.77)
+    &.en
+      background url(../img/i-flag-en.png) center no-repeat
+    &.ger
+      background url(../img/i-flag-ger.png) center no-repeat
+    &.spain
+      background url(../img/i-flag-spain.png) center no-repeat
+    &.china
+      background url(../img/i-flag-china.png) center no-repeat
 
 
-  // .ru
-  // .en
-  // .ger
-  // .spain
-  // .china
-  //
+
+
+
 .Hform .countries
   position absolute
   right 0
-  top -32px
+  top -38px
   a
     padding 0 1em
