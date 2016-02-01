@@ -34,6 +34,12 @@ http://fonts4web.ru/segoeui.html
     font-weight: normal;
 }
 
+f-l()
+  font-family "SegoeUILight"
+f-n()
+  font-family "SegoeUIRegular"
+f-b()
+  font-family "SegoeUIBold"
 
 *
   box-sizing border-box
@@ -53,9 +59,6 @@ body
   margin 0
 
   font 14px/1.4 "SegoeUIRegular"
-  //font 14px/1.4 SegoeUIRegular sans-serif
-  //font-family SegoeUIRegular, sans-serif
-
 
   color #333
   min-width 1300px
@@ -64,16 +67,9 @@ h1
   font-family "SegoeUILight"
 
 b, h3
-  font-family "SegoeUIBold"
+  f-b()
 
 
-
-f-l()
-  font-family "SegoeUILight"
-f-n()
-  font-family "SegoeUIRegular"
-f-b()
-  font-family "SegoeUIBold"
 
 
 
