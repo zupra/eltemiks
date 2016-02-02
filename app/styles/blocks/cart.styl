@@ -53,28 +53,35 @@
       display block
 
 #cart_order
+  //display none
 
-
-  display none
-
-
-  box-shadow 0 0 12px
 
 
   position absolute
   right 0
   top 60px
   z-index 10
-  width 400px
+  width 380px
 
   background #FFF
-  padding 0 1em 1em
-
+  padding 1em //1.4em 1.6em 2.4em
+  box-shadow 0 0 12px
   //reset
   text-align left
   line-height 1.4
   border-radius 0
 
-  li b
-    float right
-    //text-align right
+  ol
+    margin 0 0 0 1.2em
+    padding 0
+  li
+    border-bottom: 1px dotted #333
+    span, b
+      background #fff
+      margin-bottom -1px
+      position relative
+      bottom -1px
+    b
+      float right
+
+  //center
