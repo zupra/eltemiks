@@ -1,266 +1,320 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
     <link rel="stylesheet" href="./css/common.css">
 </head>
+
 <body>
 
 
-<div w3-include-html="./header_2.html"></div>
+<!-- <div w3-include-html="./header_2.html"></div> -->
 
 
 
-<div class="catalog_fltr">
-  <div class="wrap">
-    <h1>Дозирующие устройства</h1>
+    <div class="catalog_fltr">
+        <div class="wrap ">
+            Главная — Каталог — Лабораторное оборудование — Дозирующие устройства Вернуться в каталог
+            <h1>Дозирующие устройства</h1>
+            <p>
+                И даже с языками, использующими латинский алфавит, могут возникнуть небольшие проблемы: в различных языках те или иные буквы встречаются с разной частотой, имеется разница в длине наиболее распространенных слов. Отсюда напрашивается вывод, что все же лучше использовать в качестве «рыбы» текст на том языке, который планируется использовать при запуске проекта. Сегодня существует несколько вариантов Lorem ipsum, кроме того, есть специальные генераторы, создающие собственные варианты текста на основе оригинального трактата, благодаря чему появляется возможность получить более длинный неповторяющийся набор слов. Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону ведь именно из его трактата. «О пределах добра и зла» средневековый книгопечатник вырвал отдельные фразы и слова, получив текст-«рыбу». используемый. и по сей день. Конечно, возникают некоторые вопросы, связанные с использованием Lorem ipsum на сайтах и проектах, ориентированных на кириллический контент – написание символов на латыни и на кириллице значительно различается.
+            </p>
 
 
-    <p>
+            <div class="RelatedArticle">
+            <!--:before => Статья по теме -->
 
-      И даже с языками, использующими латинский алфавит, могут возникнуть небольшие проблемы: в различных языках те или иные буквы встречаются с разной частотой, имеется разница в длине наиболее распространенных слов. Отсюда напрашивается вывод, что все же лучше использовать в качестве «рыбы» текст на том языке, который планируется использовать при запуске проекта. Сегодня существует несколько вариантов Lorem ipsum, кроме того, есть специальные генераторы, создающие собственные варианты текста на основе оригинального трактата, благодаря чему появляется возможность получить более длинный неповторяющийся набор слов.
-  Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке.
-  Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону
-  ведь именно из его трактата.
-  «О пределах добра и зла» средневековый книгопечатник вырвал отдельные фразы и слова, получив текст-«рыбу».
-  используемый.
-   и по сей день. Конечно, возникают некоторые вопросы, связанные с использованием Lorem ipsum на сайтах и проектах, ориентированных на кириллический контент – написание символов на латыни и на кириллице значительно различается.
+            Основные нормативы выбора лабораторного оборудования по ГОСТ — №1547-УД9
+
+            </div>
 
 
-    </p>
-
-
-
-  </div>
-</div>
-
-
+`
+        </div>
+    </div>
 
 
 
 <div id="FILTER" class="wrap">
 
   <div id="LP">
-
-    <h3>Цена, руб.</h3>
-
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 150 до 500
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 500 до 1 000
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 1 000 до 5 000
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 5 000 до 10 000
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 10 000 до 50 000
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      от 50 000 до 150 000
-    </label>
-
-
-
-    <h3>Область применения</h3>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Пищевое производство
-    </label>
-    <label>
-      <input type="checkbox" name="name" value="">
-      Экологический контроль
-    </label>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Промышленность
-    </label>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Нефтехимия
-    </label>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Микробиология и биохимия
-    </label>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Оснащение лабораторий
-    </label>
+    <form action="" id="filterForm">
+      <h3>Цена, руб.</h3>
+      <span>от
+        <input type="text" name="">
+      </span>
+      <span>до
+        <input type="text" name="">
+      </span>
+      <label>
+          <input type="checkbox" name="name" value=""> от 150 до 500
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> от 500 до 1 000
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> от 1 000 до 5 000
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> от 5 000 до 10 000
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> от 10 000 до 50 000
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> от 50 000 до 150 000
+      </label>
+      <h3>Область применения</h3>
+      <label>
+          <input type="checkbox" name="name" value=""> Пищевое производство
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Экологический контроль
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Промышленность
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Нефтехимия
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Микробиология и биохимия
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Оснащение лабораторий
+      </label>
 
 
-    <h3>Компания производитель</h3>
+      <h3>Методики</h3>
+      <input type="search" placeholder="">
+      <button class="btn-blue"></button>
 
-    <label>
-      <input type="checkbox" name="name" value="">
-      Siemens
-    </label>
 
-    <label>
-      <input type="checkbox" name="name" value="">
-      Huawei
-    </label>
+      <h3>Компания производитель</h3>
+      <label>
+          <input type="checkbox" name="name" value=""> Siemens
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Huawei
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Техногарант
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Николь
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Трейдтех
+      </label>
+      <label>
+          <input type="checkbox" name="name" value=""> Снабстроймед
+      </label>
 
-    <label>
-      <input type="checkbox" name="name" value="">
-      Техногарант
-    </label>
+      <h3>Способ доставки</h3> Самовывз Экспресс-почта Курьером
+      <h3>Гарантия от производителя</h3>
+      <h3>Возможный предзаказ</h3>
+    </form>
 
-    <label>
-      <input type="checkbox" name="name" value="">
-      Николь
-    </label>
+    <div>
+      <p>Если у вас возникают сложности в подборе оборудования вы можете связаться с нами по телефону <b>+7 (473) 299-99-99</b>
 
-    <label>
-      <input type="checkbox" name="name" value="">
-      Трейдтех
-    </label>
-
-    <label>
-      <input type="checkbox" name="name" value="">
-      Снабстроймед
-    </label>
-
+      </p>
+      <a href="" class="btn btn-green">Нужна консультация специалиста</a>
+    </div>
 
   </div>
+
 
   <div id="grid">
-
-    Сортировать:      по названию        по цене        по популярности
-    <h2>Дозаторы</h2>
-
-
-
-
-
-
-
-<!-- (.item>img[src="http://lorempixel.com/97/94?$"]+p{lorem}+p{/1000 p.})*9 -->
-
-
-<div class="item">
-  <img src="http://lorempixel.com/200/120?1" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?2" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?3" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?4" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?5" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?6" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?7" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?8" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
-</div>
-<div class="item">
-  <img src="http://lorempixel.com/200/120?9" alt="">
-  <p>Комплексы дозирования «макро»
-компонентов</p>
-  <p>1000 p.</p>
+      Сортировать: по названию по цене по популярности
+      <h2>Дозаторы</h2>
+      <!-- (.item>img[src="http://lorempixel.com/97/94?$"]+p{lorem}+p{/1000 p.})*9 -->
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?1" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?2" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?3" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?4" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?5" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?6" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?7" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?8" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+      <div class="item">
+          <img src="http://lorempixel.com/200/120?9" alt="">
+          <p>Комплексы дозирования «макро» компонентов
+          </p>
+          <p>1000 p.</p>
+      </div>
+  </div>
 </div>
 
 
+
+
+<section id="youSearched">
+<div class="wrap">
+
+
+  <h2>Вы просматривали</h2>
+
+
+  <div class="SLICK_youSearched">
+
+    <!-- в одной прокрутке 4 элемента -->
+    <div class="for4items">
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Высота - 2 строки, остальное многоточием ...
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Veniam distinctio velit, voluptate quos
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              reprehenderit omnis reiciendis, est
+              <b>15 789 р.</b>
+          </p>
+        </div>
+    </div>
+    <div class="for4items">
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Название товара может быть больше, тогда ...
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              Veniam distinctio velit, voluptate quos
+              <b>15 789 р.</b>
+          </p>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/70x70" alt="">
+          <p>
+              reprehenderit omnis reiciendis, a
+              <b>15 789 р.</b>
+          </p>
+        </div>
+    </div>
 
 
   </div>
 
+
+
+
+
+
+
+
 </div>
-
-
-
-
-<footer w3-include-html="./footer.html"></footer>
+</section>
 
 
 
 
 
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-
-  <script>
+    <footer w3-include-html="./footer.html"></footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script>
     //helper
-  (function() {
-    //http://www.w3schools.com/howto/howto_html_include.asp
-      myHTMLInclude();
+    (function() {
+        //http://www.w3schools.com/howto/howto_html_include.asp
+        myHTMLInclude();
 
-      function myHTMLInclude() {
-          var z, i, a, file, xhttp;
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-              if (z[i].getAttribute("w3-include-html")) {
-                  a = z[i].cloneNode(false);
-                  file = z[i].getAttribute("w3-include-html");
-                  var xhttp = new XMLHttpRequest();
-                  xhttp.onreadystatechange = function() {
-                      if (xhttp.readyState == 4 && xhttp.status == 200) {
-                          a.removeAttribute("w3-include-html");
-                          a.innerHTML = xhttp.responseText;
-                          z[i].parentNode.replaceChild(a, z[i]);
-                          myHTMLInclude();
-                      }
-                  }
-                  xhttp.open("GET", file, true);
-                  xhttp.send();
-                  return;
-              }
-          }
-      }
+        function myHTMLInclude() {
+            var z, i, a, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                if (z[i].getAttribute("w3-include-html")) {
+                    a = z[i].cloneNode(false);
+                    file = z[i].getAttribute("w3-include-html");
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (xhttp.readyState == 4 && xhttp.status == 200) {
+                            a.removeAttribute("w3-include-html");
+                            a.innerHTML = xhttp.responseText;
+                            z[i].parentNode.replaceChild(a, z[i]);
+                            myHTMLInclude();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
 
-  })();
-  </script>
-  <script w3-include-html="./script.html"></script>
+    })();
+    </script>
+    <script w3-include-html="./script.html"></script>
 </body>
+
 </html>

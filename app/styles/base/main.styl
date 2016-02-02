@@ -50,39 +50,34 @@ html,body
   width 100%
   height 100%
 
-
-
 body
-
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   margin 0
-
   font 14px/1.4 "SegoeUIRegular"
-
   color #333
   min-width 1300px
 
-h1
-  font-family "SegoeUILight"
+
+
+// h1
+//   f-l()
 
 b, h3
   f-b()
-
-
-
-
 
 ul
   list-style none
 
 
 
-
-
-
-.center //кнопки "MORE"
-
+.breadcrumbs
+  padding-left 1em
+  color #999
+  a
+    color #999
+//кнопки "MORE"
+.center
   padding 30px 0
   clear both
   text-align center
@@ -98,7 +93,7 @@ ul
     border-radius 3px
 
     color #a7a7a7
-    text-decoration none
+    //text-decoration none
 
     font-size 20px
     line-height 32px
@@ -128,7 +123,7 @@ ul
   padding 0 30px
   margin 0 auto
 
-
+//$wrap = 1240px
 
 
 
@@ -142,7 +137,7 @@ section
     color  #999 //для разделителя
     a
       color  #999
-      text-decoration none
+      //text-decoration none
       &:hover
         border-bottom 1px dashed
       &.tab_current
@@ -158,90 +153,6 @@ section
 
 
 
-
-
-
-
-
-
-[placeholder]
-  font-size 16px
-  //font-family: //arial
-  //padding 0 1em
-
-textarea
-  padding: 1em
-
-input,textarea
-  border 1px solid #c4c4c4
-
-  //padding-bottom: 1em
-
-
-
-//input[type="text"],
-//input[type="search"]
-
-
-
-input
-  margin-bottom 1em
-
-  height 36px
-  line-height 36px
-  padding: 0 1em
-
-//RESET 
-//input[type="checkbox"], input[type="radio"]
-input[type="checkbox"]
-  height auto
-  //line-height 36px
-  //padding: 0 1em
-
-
-input,button,textarea
-  &:focus
-    box-shadow none
-    //outline none to norm
-
-
-
-//button, input[type="submit"]
-button, .btn, input[type="submit"]
-  cursor pointer
-  padding 0 2em
-  color #FFF
-  border 0
-  border-radius 3px
-  font-size 16px
-
-  line-height 36px
-  height 37px
-
-  background linear-gradient(90deg, #6d99ff 0%, #3c6cde 100%)
-  &:hover
-    background  #6491f9
-  &:active
-    background  #4b7cef
-
-
-.btn
-  display inline-block
-  text-decoration none
-
-btn-green()
-  background #7cb342
-  &:hover
-    background  #95c561
-  &:active
-    background  #71a23c
-
-.btn-green
-  background #7cb342
-  &:hover
-    background  #95c561
-  &:active
-    background  #71a23c
 
 
 
