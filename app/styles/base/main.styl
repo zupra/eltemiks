@@ -188,33 +188,32 @@ section
 .countries
 
   a
-    display inline-block
+    &:before
+      content ''
+      display inline-block
 
-    width: 32px
-    height: 26px
 
-    //height 16px
-    //width 20px
 
-    // .active
-    //   background rgba(0, 158, 224, 0.77)
-    //   width: 32px
-    //   height: 26px
-    //
-    //
+      height 16px
+      width 20px
 
-    &.ru
-      background url(../img/i-flag-ru.png) center no-repeat rgba(0, 158, 224, 0.77)
-    &.en
+      // .active
+      //   background rgba(0, 158, 224, 0.77)
+      //   width: 32px
+      //   height: 26px
+      //
+      //
+
+    &.ru:before
+      background url(../img/i-flag-ru.png) center no-repeat
+    &.en:before
       background url(../img/i-flag-en.png) center no-repeat
-    &.ger
+    &.ger:before
       background url(../img/i-flag-ger.png) center no-repeat
-    &.spain
+    &.spain:before
       background url(../img/i-flag-spain.png) center no-repeat
-    &.china
+    &.china:before
       background url(../img/i-flag-china.png) center no-repeat
-
-
 
 
 
@@ -223,4 +222,14 @@ section
   right 0
   top -38px
   a
-    padding 0 1em
+    &:before
+      width: 32px
+      height: 26px
+    &.ru:before
+      background-color rgba(0, 158, 224, 0.77)
+
+#bigNav .countries a
+  margin 0
+  &:before
+    margin-right .5ex
+    vertical-align middle
