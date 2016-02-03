@@ -87,10 +87,14 @@ input,button,textarea
 
 
 //button, input[type="submit"]
-button, .btn, input[type="submit"]
+
+button,
+.btn,
+.buy1click,
+input[type="submit"]
   cursor pointer
   padding 0 2em
-  color #FFF
+
   border 0
   border-radius 3px
   font-size 16px
@@ -98,16 +102,29 @@ button, .btn, input[type="submit"]
   line-height 36px
   height 37px
 
+
+button, .btn, input[type="submit"]
+  color #FFF
   background linear-gradient(90deg, #6d99ff 0%, #3c6cde 100%)
   &:hover
     background  #6491f9
   &:active
     background  #4b7cef
 
-
 .btn
   display inline-block
   text-decoration none
+
+.buy1click
+  color #000
+  border 1px solid #b4b4b4
+  background: linear-gradient(0deg, #e0e0e0 0%, #ffffff 100%)
+  &:hover
+    background #f8f8f8
+  &:active
+    background linear-gradient(0deg, #ffffff 0%, #e0e0e0 100%)
+
+
 
 btn-green()
   background #7cb342
