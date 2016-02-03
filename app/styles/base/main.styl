@@ -76,6 +76,22 @@ ul
   color #999
   a
     color #999
+    &:hover
+      text-decoration underline
+    &.back
+      display block
+      margin 1em 0 0 2em
+      position relative
+      &:before
+        position absolute
+        left -20px
+        content '⬅ '//←
+        color #50aaf8
+        text-decoration none
+        //font-family arial
+        //font-weight bold
+
+
 //кнопки "MORE"
 .center
   padding 30px 0
