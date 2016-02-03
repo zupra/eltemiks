@@ -61,12 +61,27 @@
 
 .RelatedArticle
   float right
-  border 2px dashed #008fff
+  width 300px
+  border 1px dashed #008fff
   padding 1em
-  text-align center
+  margin-left 2em
 
+  text-align center
+  color #999
+  font-style italic
   position relative
 
   &:before
     position absolute
+    top -12px
+    left 50%
+    transform translateX(-50%)
+
     content 'Статья по теме'
+    color #008fff
+    background #F6F5F3
+    padding 0 1em
+
+  img
+    display block
+    margin auto
