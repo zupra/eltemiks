@@ -4,11 +4,31 @@ a
 
 
 
+// .subnav
+//   position absolute
+//   right 0
+//   top 50px
+//   color  #999 //для разделителя
+//   a
+//     color  #999
+//     //text-decoration none
+//     &:hover
+//       border-bottom 1px dashed
+//     &.tab_current
+//       text-decoration underline
+//       border-bottom 0
+
+
+
+
+
+
 .sort
   //color #000
   a
     color #000
     //text-decoration none
+    position relative
     margin 0 1em
     &:hover
       text-decoration underline
@@ -16,7 +36,11 @@ a
       f-b()
       text-decoration underline
     &:after
-      content ' ⌗'
+      position absolute
+      right -1em
+      top 1px
+      content '⌗'
+      font-family Arial
       color #999
 
 .sort_alphabet
@@ -114,6 +138,17 @@ button, .btn, input[type="submit"]
 .btn
   display inline-block
   text-decoration none
+
+.plus,
+.minus
+  width 14px
+  height 17px
+  line-height 16px
+  padding 0
+
+
+
+
 
 .buy1click
   color #000

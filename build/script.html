@@ -1,6 +1,6 @@
 $(function() {
   $('.SLICK_s4').slick({
-    slidesToShow: 1,
+    //slidesToShow: 1,
     arrows: false,
     dots: true,
     fade: true
@@ -14,6 +14,12 @@ $(function() {
 
   $('.SLICK_youSearched').slick({
     //autoplay: true
+  });
+
+  $('.SLICK_productview').slick({
+    vertical: true,
+    //arrows: false,
+    slidesToShow: 4
   });
 
 
@@ -110,12 +116,12 @@ $(function() {
     $(this).find('.js-tab').eq(0).show();
   });
 
-  $('.subnav a').click(function(e) {
+  $('.js-tabNav a').click(function(e) {
 
 
     var index = $(this).index(),
-      tab = $(this).parent('.subnav').nextAll('.js-tab'),
-      current_tab = tab.get(index);
+        tab = $(this).parent('.js-tabNav').nextAll('.js-tab'),
+        current_tab = tab.get(index);
 
     console.log(current_tab);
     $(this).addClass('tab_current').siblings().removeClass('tab_current');

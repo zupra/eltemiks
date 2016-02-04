@@ -1,14 +1,148 @@
 #product
+  cf()
 
 
-  dl
-    dt
-      //float left
-      //display inline-block
-      f-b()
+
+//LP
+
+  .TO-order
+    width 790px
+    float:left
+    //cf()
+      
 
 
+  // .TO_buy,
+  // .TO_options
+  //   float left
+  //   width 50%
+    
+
+  .TO_buy
+    padding-right 2em
+    float left
+    width 330px
+    //margin-right 30px
+      
+    dl
+      cf()
     dt, dd
-      //float left
+      width 50%
+      float left
+      
+  .price
+    color #008fff
+    font-size 34px
+    f-b() 
+    
+
+  .howTo
+    margin-top 1em
+    border 1px solid #b4b4b4
+    border-radius 3px
+    padding 1em 1em 0 2em
+    a
+      display block
+      margin-bottom 1em
+      
+      padding-left 5em
+      font-style italic
+      color #999
+      b
+        color #50aaf7
+        display block
+      &:hover
+        b
+          text-decoration underline
+      
+      //&:nth-of-type(1)
+      &:nth-child(1)
+        background url(../img/howTo_1.png) left center no-repeat
+      &:nth-child(2)
+        background url(../img/howTo_2.png) left center no-repeat
+      &:nth-child(3)
+        background url(../img/howTo_3.png) left center no-repeat
+
+
+
+
+//DL
+  .TO_options
+    float left
+    width 450px
+    
+    ul
+      margin-bottom 1em
+    li
+      line-height 2.2em
+      padding 0 1em
       &:nth-child(odd)
         background #cae8ff
+      
+
+
+     
+
+
+
+
+
+//RP
+  aside
+    width 400px
+    float right
+    
+    .btn
+      //display block
+      width 90%
+      margin-bottom 1em
+      text-align center
+
+    .SLICK_productview
+      float right
+      width 60px
+      
+      
+  .productAsideLinks
+    padding-top 1em
+    a
+      display block
+      font-style italic
+      color #999
+      padding-left 2.4em
+      line-height 2em
+      &:hover
+        text-decoration underline
+        
+      &:nth-child(1)
+        background url(../img/productAsideLinks_1.png) left center no-repeat
+      &:nth-child(2)
+        background url(../img/productAsideLinks_2.png) left center no-repeat
+      &:nth-child(3)
+        background url(../img/productAsideLinks_3.png) left center no-repeat
+    
+
+
+
+
+
+//TABS
+.tabs_for-product
+  clear both
+  width 100%
+  
+  padding 2em 0
+
+  cf()    
+  a
+    float left
+    color #000
+    text-transform uppercase
+    f-b()
+    padding 1em 1.4em
+    
+    border-bottom 1px solid #50aaf7
+    
+    &.tab_current
+      border 1px solid #50aaf7
+      border-bottom 0        
