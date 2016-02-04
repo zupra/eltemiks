@@ -1,9 +1,5 @@
 //base
 .slick-slider
-
-
-
-
   position relative
   //display block
   user-select none
@@ -13,11 +9,11 @@
   //   transform translate3d(0, 0, 0)
 
 .slick-list
-  position relative
-  //display block
+  //position relative
+  //margin 0
+  //padding 0
   overflow hidden
-  margin 0
-  padding 0
+
   &:focus
     outline none
   &.dragging
@@ -26,9 +22,6 @@
 
 .slick-track
   position relative
-  //top 0
-  //left 0
-  //display block
   cf()
 
 .slick-loading
@@ -74,7 +67,7 @@ killBtn()
   font-size 0px
   color transparent
   background transparent
-  
+
 
 
 
@@ -82,6 +75,10 @@ killBtn()
 
 .slick-loading .slick-list
   background #EEE //#fff url('./ajax-loader.gif') center center no-repeat
+
+.slick-disabled:before
+  opacity .25
+
 
 
 .slick-arrow
@@ -98,14 +95,6 @@ killBtn()
     font-size 20px
     line-height 9px //костыль
 
-// .slick-prev,.slick-next
-//   &.slick-disabled:before
-
-.slick-disabled:before
-  opacity .25
-
-
-
 .slick-prev
   left -50px
   &:before
@@ -116,28 +105,33 @@ killBtn()
     content '❯'
 
 
-//wrap
-/*
-.slick-slider
-  //margin-bottom 50px
-*/
+.slick-vertical
+  .slick-arrow
+    left 50%
+    right none
+    top none
+  .slick-prev
+    top -10px
+    &:before
+      content '▲'
+  .slick-next
+    bottom -110px
+    &:before
+      content '▼'
 
-//OL
+
+//UL
 .slick-dots
-  //position absolute
-  //bottom -70px
-  //width 1260px //100%
   padding 0
   margin 40px 0 0
-  //list-style none - а нахуя
+
   text-align center
   li
     position relative
     display inline-block
-    
     margin 0 10px
-    padding 0
-    cursor pointer
+    //padding 0
+    //cursor pointer
     button
       killBtn()
       width 12px
@@ -145,9 +139,7 @@ killBtn()
 
       &:before
         content ''
-        //content '•'
-        //font-size 20px
-        //line-height 1//20px
+
         position absolute
         top 0
         left 0
@@ -160,17 +152,3 @@ killBtn()
       button
         &:before
           transform scale(2)
-          //width 20px
-          //height 20px
-          //font-size 40px
-          //opacity .75
-          //color #6fb94d//black
-
-
-
-
-.slick-dots li button
-  &:hover:before,
-  &:focus:before
-    color red
-    //opacity 1
