@@ -1,0 +1,40 @@
+// .smpl-slider
+//   position relative
+//   width 960px
+//   height 540px
+//   margin 0 auto
+
+.img-nav
+  position absolute
+  left 15px
+
+
+
+  cursor pointer
+  fill #008EFD
+  &:hover
+    fill #95C561
+
+  //w40 h30
+  &.prev
+    top -40px
+  &.next
+    bottom -40px
+
+
+
+#TEST_slider
+  position absolute
+  top 130px
+  right 0
+
+  width 70px //img W
+  height 292px
+  img
+    //width 31%
+    //margin 1%
+    &:nth-of-type(n+5)
+      display none
+
+
+

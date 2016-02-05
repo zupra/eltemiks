@@ -16,11 +16,10 @@ $(function() {
     //autoplay: true
   });
 
-  $('.SLICK_productview').slick({
-    vertical: true,
-    //arrows: false,
-    slidesToShow: 4
-  });
+
+
+
+
 
 
 
@@ -48,30 +47,43 @@ $(function() {
 
 
 
-  (function(){
-    var cities = {
-      'Горoд_1' : ['Горoд_1', 'tel_1', 'time_1', 'addres_1'],
-      'Горoд_2' : ['Горoд_2', 'tel_2', 'time_2', 'addres_2'],
-      'Горoд_3' : ['Горoд_3', 'tel_3', 'time_3', 'addres_3']
-    }
+  // (function(){
+  //   var cities = {
+  //     'Горoд_1' : ['Горoд_1', 'tel_1', 'time_1', 'addres_1'],
+  //     'Горoд_2' : ['Горoд_2', 'tel_2', 'time_2', 'addres_2'],
+  //     'Горoд_3' : ['Горoд_3', 'tel_3', 'time_3', 'addres_3']
+  //   }
 
-    for(var item in cities) {
-      var itemCity = cities[item][0],
-          itemTel = cities[item][1],
-          itemTime = cities[item][2],
-          itemAddres = cities[item][3],
-          $template = $($('#citiesTemplate').html());
+  //   for(var item in cities) {
+  //     var itemCity = cities[item][0],
+  //         itemTel = cities[item][1],
+  //         itemTime = cities[item][2],
+  //         itemAddres = cities[item][3],
+  //         $template = $($('#citiesTemplate').html());
 
-      $template.find('.output_1').text(itemTel);
-      $template.find('.output_2').text(itemTime);
-      $template.find('.output_3').text(itemAddres);
+  //     $template.find('.output_1').text(itemTel);
+  //     $template.find('.output_2').text(itemTime);
+  //     $template.find('.output_3').text(itemAddres);
 
-      $shop.append($template);
-    }
+  //     $shop.append($template);
+  //   }
 
-  });
+  // });
 
 
+
+
+/*
+ТЕСТОВЫЙ СЛАЙДЕР!!!
+*/
+var smplSlide = function(context) {
+  var imgs = context;
+  function append(){$('img', imgs).first().appendTo(imgs)};
+  function prepend(){$('img', imgs).last().prependTo(imgs)};
+  $('.prev', imgs).on('click', prepend);
+  $('.next', imgs).on('click', append);
+};
+smplSlide('#TEST_slider');
 
 
 

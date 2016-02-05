@@ -1,0 +1,65 @@
+.tooltip
+  
+  vertical-align middle
+
+  cursor pointer
+  position relative
+  
+  //help renrer
+  display inline-block
+  width 30px
+  height 30px
+  
+  //http://placehold.it/30x30
+  line-height 1
+
+  &:hover
+    &:after
+      content attr(title)
+
+
+      position absolute
+      left -115px
+      bottom 3.2em
+      
+      width 200px
+      height 60px
+      
+      //background #FFF
+      box-shadow: 0px 2px 10px 2px #999//rgba(0, 0, 0, 0.3)
+      //box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+      padding 1em 1em 1em 6em
+
+
+    &:before
+      border: solid;
+      border-color: #FFF transparent;
+      border-color: #FFF transparent;
+      border-width: 1em 1em 0 1em;
+      bottom: 2.2em;
+      content: "";
+
+      left: 0
+      position: absolute;
+      z-index 1
+      //z-index: 99;
+
+
+.test1
+  background url(http://placehold.it/30/D06B38/ffffff) no-repeat
+  &:hover:after
+    background url(http://placehold.it/60/D06B38/ffffff) 1em 1em no-repeat #FFF
+.test2
+  background url(http://placehold.it/30/129774/ffffff) no-repeat
+  &:hover:after
+    background url(http://placehold.it/60/129774/ffffff) 1em 1em no-repeat #FFF
+.test3
+  background url(http://placehold.it/30/222222/ffffff) no-repeat
+  &:hover:after
+    background url(http://placehold.it/60/222222/ffffff) 1em 1em no-repeat #FFF
+.test4
+  background url(http://placehold.it/30/ff0000/ffffff) no-repeat
+  &:hover:after
+    background url(http://placehold.it/60/ff0000/ffffff) 1em 1em no-repeat #FFF
+  
