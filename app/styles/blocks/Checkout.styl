@@ -7,10 +7,27 @@
 
 
 #orderTable
+  width 100%
+  counter-reset num
   th
     background #dee1da
+    text-align left
   tr
     background #FFF
+    &:hover
+      background gainsboro //#fdfdf3
+      border-top 1px solid #008EFD
 
   td
-    padding 1em
+    &:first-child
+      padding-left 1em
+      &:before
+        counter-increment num
+        content counter(num) ". "
+        
+      
+
+  img
+    //display block
+    margin-left 1em
+    vertical-align middle
