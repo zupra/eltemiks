@@ -1,0 +1,7 @@
+<svg width="20" height="20" viewBox="0 0 20 20">
+  <g stroke-width="2" stroke="red">
+    <circle cx="10" cy="10"  r="8" style="fill:none;" />
+    <line x1="2" y1="2" x2="18" y2="18" />
+    <line x1="2" y1="18" x2="18" y2="2" />
+  </g>
+</svg>
