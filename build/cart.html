@@ -78,7 +78,7 @@
           <td>
 
 
-<!--
+            <!--
 <svg width="20" height="20" viewBox="0 0 20 20">
   <g stroke-width="2" stroke="red">
     <circle cx="10" cy="10"  r="8" style="fill:none;" />
@@ -113,71 +113,74 @@
           <input type="text">
         </label>
 
-<div>
-  <b>На кого оформить заказ?</b>
+        <div>
+          <b>На кого оформить заказ?</b>
 
-  <label>
-    <input type="radio" name="">
-    Частное лицо
-  </label>
-  &emsp;
-  <label>
-    <input type="radio" name="">
-    Юридическое лицо
-  </label>
-</div>
+          <label>
+            <input type="radio" name=""> Частное лицо
+          </label>
+          &emsp;
+          <label>
+            <input type="radio" name=""> Юридическое лицо
+          </label>
+        </div>
 
 
-<label>
-  <b>Номер ИНН</b>
-  <input type="text">
-</label>
+        <label>
+          <b>Номер ИНН</b>
+          <input type="text">
+          <button>Проверить</button>
+        </label>
 
 
-<div class="div-address">
-  <b> Адрес доставки:</b>
-  <input type="text" placeholder="Индекс">
-  <!-- select>(option{item_$})*5 -->
-  <select>
-    <option>Регион</option>
-    <option>item_2</option>
-    <option>item_3</option>
-    <option>item_4</option>
-    <option>item_5</option>
-  </select>
+        <div class="div-address">
+          <b> Адрес доставки:</b>
 
-  <br>
+          <input type="number" placeholder="Индекс">
+          <!-- select>(option{item_$})*5 -->
+          <select>
+            <option>Регион</option>
+            <option>длинный предлинный регион</option>
+            <option>item_2</option>
+            <option>item_3</option>
+            <option>item_4</option>
+            <option>item_5</option>
+          </select>
 
-  <input type="text" placeholder="Улица">
-  <input type="text" placeholder="Наименование организации">
-</div>
+          <br>
 
-
-
-
-
-<label>
-  <b>Ваша должность:</b>
-  <input type="text">
-</label>
+          <input type="text" placeholder="Улица">
+          <input type="text" placeholder="Наименование организации">
+        </div>
 
 
-<div>
-  <b>Способ доставки:</b>
 
-  <label>
-    <span>
+
+
+        <label>
+          <b>Ваша должность:</b>
+          <input type="text">
+        </label>
+
+
+        <div>
+          <b>Способ доставки:</b>
+
+          <label>
+            <span>
     <input type="radio" name="">
     Самовывоз</span>
-  </label>
+          </label>
 
-</div>
+        </div>
 
+        <div class="center">
+          <button class="btn-green">Отправить заказ</button>
+        </div>
 
-<button class="btn-green">Отправить заказ</button>
-<!-- <input type="submit" class="btn-green" value="Отправить заказ"> -->
+        <!-- <input type="submit" class="btn-green" value="Отправить заказ"> -->
 
-</form>
+      </form>
     </div>
   </div>
   <section id="MS_5" class="wrap">
@@ -289,35 +292,35 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script>
-  //helper
-  (function() {
-    //http://www.w3schools.com/howto/howto_html_include.asp
-    myHTMLInclude();
+    //helper
+    (function() {
+      //http://www.w3schools.com/howto/howto_html_include.asp
+      myHTMLInclude();
 
-    function myHTMLInclude() {
-      var z, i, a, file, xhttp;
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        if (z[i].getAttribute("w3-include-html")) {
-          a = z[i].cloneNode(false);
-          file = z[i].getAttribute("w3-include-html");
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (xhttp.readyState == 4 && xhttp.status == 200) {
-              a.removeAttribute("w3-include-html");
-              a.innerHTML = xhttp.responseText;
-              z[i].parentNode.replaceChild(a, z[i]);
-              myHTMLInclude();
+      function myHTMLInclude() {
+        var z, i, a, file, xhttp;
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          if (z[i].getAttribute("w3-include-html")) {
+            a = z[i].cloneNode(false);
+            file = z[i].getAttribute("w3-include-html");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (xhttp.readyState == 4 && xhttp.status == 200) {
+                a.removeAttribute("w3-include-html");
+                a.innerHTML = xhttp.responseText;
+                z[i].parentNode.replaceChild(a, z[i]);
+                myHTMLInclude();
+              }
             }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            return;
           }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          return;
         }
       }
-    }
 
-  })();
+    })();
   </script>
   <script w3-include-html="./script.html"></script>
 </body>
