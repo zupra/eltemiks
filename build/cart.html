@@ -81,26 +81,80 @@
         </tr>
       </table>
 
-      
+
       <form action="" id="Checkout">
         <h1>Оформление заказа</h1>
         <label>
-          Фамилия, Имя, Отчество
+          <b>Фамилия, Имя, Отчество</b>
           <input type="text">
         </label>
         <label>
-          Адрес e-mai:
+          <b>Адрес e-mai:</b>
           <input type="text">
         </label>
+
         <label>
-          Номер телефона:
+          <b>Номер телефона:</b>
           <input type="text">
         </label>
-        <label>
-          <input type="text">
-        </label>
-        На кого оформить заказ? Частное лицо Юридическое лицо Номер ИНН: Адрес доставки: Ваша должность: Способ оплаты: Наличный расчет Электронный расчет Способ доставки: Самовывоз Особые условия доставки (необходима консультация с менеджером) Способ оплаты: Способ доставки:
-      </form>
+
+<div>
+  <b>На кого оформить заказ?</b>
+
+  <label>
+    <span>
+    <input type="radio" name="">
+    Частное лицо</span>
+  </label>
+
+  <label>
+    <input type="radio" name="">
+    Юридическое лицо
+  </label>
+</div>
+
+
+<label>
+  <b>Номер ИНН</b>
+  <input type="text">
+</label>
+
+
+<div class="div-address">
+  <b> Адрес доставки:</b>
+  <input type="text" placeholder="Индекс">
+  <!-- select>(option{item_$})*5 -->
+  <select>
+    <option>Регион</option>
+    <option>item_2</option>
+    <option>item_3</option>
+    <option>item_4</option>
+    <option>item_5</option>
+  </select>
+  <input type="text" placeholder="Улица">
+  <input type="text" placeholder="Наименование организации">
+</div>
+
+<label>
+  <b>Ваша должность:</b>
+  <input type="text">
+</label>
+
+
+<div>
+  <b>Способ доставки:</b>
+
+  <label>
+    <span>
+    <input type="radio" name="">
+    Самовывоз</span>
+  </label>
+
+</div>
+
+
+
+</form>
     </div>
   </div>
   <section id="MS_5" class="wrap">

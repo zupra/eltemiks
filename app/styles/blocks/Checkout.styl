@@ -1,6 +1,24 @@
 #Checkout
-  label
+  > label
     display block
+    cursor pointer
+    &:hover
+      input
+        border-color #008EFD
+    input:focus
+      border-color #008EFD
+  b
+    display inline-block
+    width 200px
+
+  input[type="text"]
+    width 300px
+  .div-address
+    input[type="text"]:first-child
+      width 100px
+
+
+
 
 
 
@@ -15,8 +33,9 @@
   tr
     background #FFF
     &:hover
-      background gainsboro //#fdfdf3
-      border-top 1px solid #008EFD
+      background #FDFDF3 //gainsboro //#fdfdf3
+      border-bottom 1px solid #008EFD
+
 
   td
     &:first-child
@@ -24,8 +43,7 @@
       &:before
         counter-increment num
         content counter(num) ". "
-        
-      
+        f-b()
 
   img
     //display block
