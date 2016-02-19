@@ -187,30 +187,48 @@ btn-green()
 
 
 
-
-
-
-/*
-
 //В наличии
-.In stock
-#78a100
+.status
+  &:before
+    content ''
+    display inline-block
+    width 1em
+    height 12px//1em
+    padding-right 6px
+    //background #000
+    //background url(../img/status_in-stock.png) center no-repeat
 
-//Предзаказ
-.pre-order
-#333
-
-//Ждем поступления
-//We are waiting for admission
-.waiting
-#ff8400
-
-//Снят с производства
-//Out of production
-#ff0000
+  &.in-stock
+    color #78a100
+    &:before
+      background url(../img/status_in-stock.png) center no-repeat
 
 
-*/
+
+  //Предзаказ
+  &.pre-order
+    color #555
+    &:before
+      background url(../img/status_pre-order.png) center no-repeat
+
+  //Ждем поступления
+  //We are waiting for admission
+  &.waiting
+    color #ff8400
+    &:before
+      background url(../img/status_waiting.png) center no-repeat
+
+  //Снят с производства
+  &.out-production
+    color #ff0000
+    &:before
+      background url(../img/status_out-production.png) center no-repeat
+
+
+
+
+
+
 
 
 //Новинка
