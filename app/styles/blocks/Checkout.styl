@@ -2,14 +2,21 @@
   clear both
 
 
+
+  input, select
+    &:hover,
+    &:focus
+      border 1px solid #008EFD
+  // input, select
+  //   &:focus
+  //     border 1px solid #008EFD
+
+
+
   > label
     display block
     cursor pointer
-    &:hover
-      input
-        border-color #008EFD
-    input:focus
-      border-color #008EFD
+
   b
     display inline-block
     width 200px
@@ -17,7 +24,8 @@
   input[type="text"]
     width 380px
   .div-address
-    input[type="number"]
+
+    input:first-of-type  //[type="number"]
       width 130px
 
     select ~ input
@@ -28,6 +36,7 @@
   ._INN
     input
       padding-right 145px
+      height 38px
     button
       margin-left -145px
 
@@ -119,7 +128,6 @@
 
   //button
   .verdict_go
-
     height auto
     line-height 1.2
     padding .6em 2em

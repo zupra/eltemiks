@@ -57,7 +57,7 @@ header
       width 25%
       position relative
       font-size 20px
-      
+
       text-shadow 0px 1px 0px rgba(0, 0, 0, 0.25)
 
       a
@@ -65,21 +65,23 @@ header
         &:hover
           text-decoration underline
 
-      &:before
-        content ''
-        position absolute
-        left 50%
-        top -70px
-        transform translateX(-50%)
-        width 69px
-        height 69px
-      &:nth-of-type(1):before
+        &:before
+          content ''
+          position absolute
+          left 50%
+          top -70px
+          transform translateX(-50%)
+          width 69px
+          height 69px
+
+
+      &:nth-child(1) a:before
         background url(../img/i-h_1.png) no-repeat
-      &:nth-of-type(2):before
+      &:nth-child(2) a:before
         background url(../img/i-h_2.png) no-repeat
-      &:nth-of-type(3):before
+      &:nth-child(3) a:before
         background url(../img/i-h_3.png) no-repeat
-      &:nth-of-type(4):before
+      &:nth-child(4) a:before
         background url(../img/i-h_4.png) no-repeat
 
 
