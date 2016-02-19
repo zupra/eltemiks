@@ -33,15 +33,16 @@
 
   position relative
 
+
   //helper:hover
   &:after
     content ''
     position absolute
-    bottom -40px
+    bottom -15px
     right 0
-    width 100%
-    height 40px
-    background #000
+    left -20px
+    height 15px
+    //background #000
 
 
   .cart_sum-prod
@@ -67,19 +68,23 @@
 #cart_order
   display none
 
-  &:after
-    content ''
-    position absolute
-    width 100%
-    left 0
-    bottom -4px
-    border-top 4px dotted #FFF
 
+
+  &:after
   &:before
     content ''
     position absolute
-    //width 0 //2
-    //height 0 //20px
+
+
+  &:after
+    width 100%
+    left 0
+    height 8px
+    background url(../img/cart_after.png) repeat-x
+    bottom -8px
+
+
+  &:before
     right 40px
     top -20px
     border-style: solid;
@@ -97,7 +102,9 @@
 
   background #FFF
   padding 1em //1.4em 1.6em 2.4em
-  box-shadow 0 0 12px
+  //box-shadow 0 0 12px
+  box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.4);
+
   //reset
   text-align left
   line-height 1.4
