@@ -1,6 +1,6 @@
 #Checkout
-  [placeholder]
-    font-style italic
+  clear both
+
 
   > label
     display block
@@ -19,10 +19,15 @@
   .div-address
     input[type="number"]
       width 130px
+
     select ~ input
       display block
       margin-left 204px
 
+
+  ._INN
+    input
+      padding-right 145px
 
 
 
@@ -30,7 +35,8 @@
 
 
 #orderTable
-  width 100%
+  width 900px
+  float left
   counter-reset num
   th
     background #dee1da
@@ -39,7 +45,7 @@
     background #FFF
     &:hover
       background #FDFDF3 //gainsboro //#fdfdf3
-      border-bottom 1px solid #008EFD
+      //border-bottom 1px solid #008EFD
 
 
   td
@@ -54,3 +60,58 @@
     //display block
     margin-left 1em
     vertical-align middle
+
+
+
+#verdict
+
+  float right
+
+  padding 3em 1em 1.5em
+  width 226px
+
+  box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.22);
+  background url(../img/logo_BW.png) center 1em no-repeat #FFF
+
+
+
+
+  position relative
+  &:before, &:after
+    position absolute
+    content ''
+
+    width 240px
+  &:before
+    left -6px
+    height 18px
+    top -18px
+    background url(../img/verdict_up.png) no-repeat
+  &:after
+    left 0
+    background url(../img/verdict_down.png) no-repeat
+    height 7px
+    bottom -7px
+
+
+
+  h2
+    font-size 20px
+    f-b()
+
+  h2 + p
+    color #777
+
+  form
+    f-n()
+    border-bottom 1px dashed #a7a7a7
+    padding-bottom 2em
+
+
+
+  //button
+  .verdict_go
+
+    height auto
+    line-height 1.2
+    padding .6em 2em
