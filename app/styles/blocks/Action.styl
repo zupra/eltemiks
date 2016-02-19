@@ -184,6 +184,12 @@ btn-green()
     background  #71a23c
 
 
+
+
+
+
+
+
 /*
 
 //В наличии
@@ -204,42 +210,39 @@ btn-green()
 #ff0000
 
 
-
+*/
 
 
 //Новинка
-.novelty
-#87cc6b
-
-
+.f-new
+  background #87cc6b
 //Акция
-.stock
-#ff8400
-
-
+.f-alert
+  background #ff8400
 //Скидка
-.discount
-#7ec3ff
+.f-discount
+  background #7ec3ff
 
 
 
 
+._standards
+  li
+    display inline-block
+    & + li
+      margin-left 10px
 
+    &:before
+      content '⚫ ' //простой маркер •
 
+    &._ISO:before
+      color #ff0000
 
-.point-ISO
-#ff0000
+    &._TY:before
+      color #ffae00
 
-.point-TY
-#ffae00
+    &._CAS:before
+      color #808b08
 
-.point-CAS
-#808b08
-
-.point-GOST
-#008abb
-
-
-
-
-*/
+    &._GOST:before
+      color #008abb
